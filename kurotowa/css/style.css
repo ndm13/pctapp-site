@@ -1,0 +1,183 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Ubuntu|Roboto+Condensed');
+
+header .app-header-text, h1, h2,
+header .app-header-text:before, h1:before, h2:before{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+}
+header .app-header-text:before, h1:before, h2:before, li:before{
+    content: '>';
+    margin-right: 1ex;
+    margin-left: -2ex;
+    color: #394659;
+}
+
+header nav, h3, h4, footer{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+}
+
+/* Major elements */
+html{
+    background: url(../img/background.png), black;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.5em;
+}
+/* Breakpoints */
+body{
+    width: 40rem;
+    margin: auto auto;
+}
+header .app-header-text{
+    font-size: 1.5rem;
+}
+@media (min-width: 50rem) {
+    body{
+        width: 80%;
+        max-width: 60rem;
+    }
+    header .app-header-text{
+        font-size: 2rem;
+    }
+}
+
+header{
+    width: calc(100% - 2em);
+    background-color: rgba(0, 0, 0, 0.88);
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    text-align: center;
+    padding: 1em 1em 0;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+header .pct-logo{
+    display: block;
+    margin: auto auto;
+    height: 3rem;
+}
+header .app-header-text{
+    font-size: 1.5rem;
+}
+
+header nav{
+    margin-top: 1ex;
+    width: calc(100% + 2em);
+    margin-left: -1em;
+}
+header nav a{
+    display: inline-block;
+    float: left;
+    width: 25%;
+    text-align: center;
+    max-height: 2em;
+    background-color: #394659;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    color: white;
+    margin: 0;
+    transition: all .5s;
+}
+header nav a:hover{
+    background-color: #495970;
+}
+header nav a.current{
+    background-color: #28313d;
+}
+header nav:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+header nav a:first-of-type{
+    border-bottom-left-radius: 10px;
+}
+header nav a:last-of-type{
+    border-bottom-right-radius: 10px;
+}
+
+main{
+    width: calc(100% - 4em);
+    padding: 2em 2em;
+    background: linear-gradient(to right,
+            transparent 0,
+            rgba(0,0,0,.85) 2em,
+            rgba(0,0,0,.85) calc(100% - 2em),
+            transparent 100%);
+}
+
+footer{
+    width: calc(100% - 2em);
+    background-color: #394659;
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Supplements */
+#promo-box{
+    display: block;
+    width: 100%;
+    background-color: #394659;
+    color: white;
+    font-size: larger;
+    text-align: center;
+    padding: 1em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    transition: all .1s;
+}
+#promo-box:hover{
+    background-color: #495970;
+}
+
+main img{
+    float: right;
+    border: 1rem solid #394659;
+    border-radius: .4rem;
+    width: 50%;
+    margin: 0 0 2rem 2rem;
+}
+
+section{
+    margin: 0 2rem 2rem;
+}
+
+a{
+    color: #7b95ba;
+}
+
+dt{
+    color: #7b95ba;
+    clear: left;
+    width: 8em;
+}
+dd, dt{
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+dl:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+li{
+    list-style-type: none;
+}
+ul{
+    margin-left: 0;
+    padding-left: 3ex;
+}
